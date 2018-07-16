@@ -1,0 +1,32 @@
+/*导航图标位置*/
+.top-menu ul li a.service-bg {
+    background-position:-248px -51px;
+}
+.top-menu ul li a.home-bg{
+    background-position: -17px -51px;
+}
+
+
+.col-md-4{
+    width:260px;
+    height: 450px;
+}
+#learn-more{
+    display: none;
+}
+.title{
+    height: 30px;
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+    padding-left: 90px;
+    font-size: 2vw;
+    color: green;
+}
+/*contain部分的样式*/
+.contain{
+    width: 100%;
+    background-color: white;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}

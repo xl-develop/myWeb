@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*顶部图片轮播部分*/
+.slider {
+    position: relative;
+}
+.img-area {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.img-area li {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.img-area .play {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.banner{
+    background:url(../images/1.jpg)no-repeat;
+    background-size:cover;
+    min-height:700px;
+}
+.banner_two{
+    background:url(../images/2.jpg)no-repeat;
+    background-size:cover;
+    min-height:700px;
+}
+.banner_three{
+    background:url(../images/3.jpg)no-repeat;
+    background-size:cover;
+    min-height:700px;
+}
+.banner-text h1{
+    color: #FFF;
+    font-weight: 600;
+    font-size: 5em;
+    line-height: 1.5em;
+}
+.banner-text{
+    text-align:center;
+    padding-top:15%;
+}
+.banner-text h2{
+    color:rgba(255, 255, 255, 0.85);
+    line-height: 1.5em;
+    font-size: 2.3em;
+    text-align: center;
+    font-weight:400;
+}
+.banner-text a{
+    background:#6EBB1F;
+    padding:0.3em 1.5em;
+    display:inline-block;
+    font-size:1.5em;
+    color:#FFF;
+    border:1px solid #6EBB1F;
+    margin-top:2em;
+    transition:0.5s all ease;
+    text-decoration: none;
+}
+.banner-text a:hover{
+    background:transparent;
+    border:1px solid #fff;
+}
+
+.nav-text{
+    width: 100px;
+    height: 50px;
+    bottom: 10%;
+    left: 47%;
+    position: absolute;
+}
+.nav-text ul li{
+    margin: 3px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.nav-text .current{
+    border: 3px solid #FFF;
+    background: #6EBB1F;
+}
+
+
+
+/*标题部分*/
+.header{
+    margin-top: 2em;
+}
+.logo{
+    float: left;
+    margin-top: 1em;
+}
+.top-menu{
+    float: right;
+}
+.top-menu ul li{
+    display: inline-block;
+    float: left;
+    padding: 1em;
+}
+.top-menu ul li:hover{
+    background:#343B41;
+}
+.top-menu ul li.active{
+    background: #343B41;
+}
+.top-menu ul li a{
+    width: 48px;
+    height: 42px;
+    background: url("../images/splits.png");
+    padding:1em;
+    display:block;
+}
+.top-menu ul li a.home {
+    background-position: -17px 0px;
+}
+.top-menu ul li a.home:hover{
+    background-position: -17px 0px;
+}
+.top-menu ul li a.about {
+    background-position: -129px -1px;
+}
+.top-menu ul li a.about:hover{
+    background-position: -129px -51px;
+}
+.top-menu ul li a.service{
+    background-position: -248px -2px;
+}
+.top-menu ul li a.service:hover{
+    background-position: -248px -51px;
+}
+.top-menu ul li a.gallery{
+    background-position: -355px -4px;
+}
+.top-menu ul li a.gallery:hover{
+    background-position: -355px -51px;
+}
+.top-menu ul li a.contact {
+    background-position:-464px 0px;
+}
+.top-menu ul li a.contact:hover {
+    background-position: -464px -51px;
+}
+
+
+/*data-tip*/
+[data-tip] {
+    position: relative;
+    overflow: visible;
+}
+[data-tip]:before,[data-tip]:after{
+    position: absolute;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    visibility: hidden;
+    font-size: 12px;
+    line-height: 12px;
+}
+[data-tip]:before {
+    content: '';
+    border: 6px solid transparent;
+}
+[data-tip]:after {
+    content: attr(data-tip);
+    padding: 7px 10px;
+    background-color: green;
+    display: block;
+    color: #fff;
+}
+[data-tip]:hover:before,[data-tip]:hover:after{
+    opacity: 0.8;
+    visibility: visible;
+}
+[data-tip].data-tip-bottom:before,[data-tip].data-tip-bottom:after {
+    top: 100%;
+    left: 50%;
+}
+[data-tip].data-tip-bottom:before {
+    margin-top: -12px;
+    border-bottom-color: green;
+}
+[data-tip].data-tip-bottom:hover:before,[data-tip].data-tip-bottom:hover:after{
+    transform: translateX(-50%) translateY(8px);
+}
+
+/*welcome部分*/
+.welcome{
+    margin-top: 2em;
+}
+
+.wel-left h3{
+    color:#6EBB1F;
+    font-size:3.5em;
+    font-weight:600;
+}
+
+.wel-left h4{
+    color:#000;
+    font-size:2.5em;
+    font-weight:400;
+}
+
+.wel-right p{
+    color:#989795;
+    line-height:1.8em;
+    font-weight:600;
+    font-size:1em;
+}
+
+
+/*Events部分*/
+.event {
+    margin:4em 0 2em 0;
+}
+.events {
+    padding-left: 0;
+}
+.event h3{
+    color:#6EBB1F;
+    font-weight:bold;
+    font-size:2em;
+    margin-bottom:1em;
+}
+.events h4{
+    color: #5C5C5B;
+    margin: 1em 0;
+    font-weight: 600;
+    line-height: 1.2em;
+    font-size: 1em;
+}
+.events p{
+    color: #999;
+    margin-bottom: 1em;
+    font-size: 0.85em
+}
+.events a{
+    background:#6EBB1F;
+    padding:0.3em 1.5em;
+    display:inline-block;
+    font-size:1.2em;
+    color:#FFF;
+    border:1px solid #6EBB1F;
+    margin-top:0.5em;
+    transition:0.5s all ease;
+    text-decoration: none;
+}
+.events a:hover{
+    background:#333;
+    border:1px solid #fff;
+}
+.event-sec-left{
+    padding-left:0;
+}
+.events-img{
+    overflow: hidden;
+}
+
+.events img{
+    width:100%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.events img:hover{
+    transform: scale(1.2);
+}
+.event-sec-right h3{
+    color:#6EBB1F;
+    font-weight:bold;
+    font-size:1.8em;
+    margin:0 0 0.7em 0em;
+}
+.event-sec-right p{
+    color:#333;
+    font-weight:600;
+    font-size:1em;
+    width:70%;
+}
+.event-sec-right ul{
+    list-style:none;
+    margin-top:1em;
+}
+.event-sec-right ul li a {
+    color: #777;
+    padding: 0.5em 0;
+    text-decoration: none;
+    display:block;
+    font-size:1em;
+}
+.event-sec-right ul li a:hover{
+    color:#6EBB1F;
+}
+.event-sec-right ul li a span {
+    width: 9px;
+    height: 12px;
+    display: inline-block;
+    background: url(../images/arrow.png);
+    margin-right: 0.4em;
+}
+
+
+/*图片播放*/
+.slider {
+    position: relative;
+}
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.rslides li {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.rslides .play1 {
+    position: relative;
+    display: block;
+    float: left;
+}
+.event-slider{
+    background:url(../images/b2.jpg)no-repeat;
+    background-size:cover;
+    min-height:350px;
+    padding:5%;
+    text-align:center;
+}
+.event-slider h3{
+    color:#fff;
+    font-weight:300;
+    font-size:3.2em;
+    line-height:1.5em;
+}
+.nav-test{
+    width: 100px;
+    height: 50px;
+    bottom: 10%;
+    left: 47%;
+    position: absolute;
+}
+.nav-test ul li{
+    margin: 3px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.nav-test .current1{
+    border: 3px solid #FFF;
+    background: #6EBB1F;
+}
+
+
+/*新闻*/
+.news{
+    margin:3em;
+}
+.news h2 {
+    color: #6EBB1F;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom:1em;
+}
+.top-news {
+    padding-left: 0;
+}
+.top-news h3{
+    color:#5C5C5B;
+    font-size:1.2em;
+    margin-bottom:0.5em;
+    font-weight:600;
+}
+.top-news h3 a{
+    color:#5C5C5B;
+    text-decoration: none;
+}
+.top-news h3 a:hover{
+    color:#6EBB1F;
+}
+.top-news p{
+    color:#9B9B99;
+    font-size:1.2em;
+    line-height:1.8em;
+}
+
+
+
+
+/*尾部的css样式*/
+.footer{
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height:400px;
+}
+.FootZor{
+    position: absolute;
+    margin-top: 50px;
+    margin-left:270px;
+}
+.font1,.font2{
+    font-size: 2vw;
+    color: white;
+    text-decoration: none;
+    padding-left: 200px;
+    padding-top: 100px;
+}
+.Flogo{
+    width: 231px;
+    height: 41px;
+    margin: 90px 180px;
+    position: absolute;
+}
+/*尾部的图片选区*/
+.FooTwo a span {
+    width: 42px;
+    height: 48px;
+    background: url('../images/splits.png') no-repeat 0px 0px;
+    display: block;
+    margin: 0 10px;
+}
+.FooTwo a span.Add {
+    background-position: -16px -100px;
+}
+.FooTwo a span.Ephone {
+    background-position: -64px -100px;
+}
+
+.FooTwo{
+    margin: 100px 400px;
+    position: absolute;
+}
+.Dtil{
+    margin: 100px 500px;
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    font-family: 微软雅黑;
+    color: white;
+
+}
+.serch{
+    padding: 20px 40px;
+    background-color: gray;
+    /*margin-left: 400px;*/
+    position: absolute;
+    margin-left:790px;
+    margin-top: 120px;
+}
+.social-icons{
+    padding: 10px 40px;
+    background-color: rgba(200,200,200,0.5);
+    display: block;
+    position: absolute;
+    margin-left:790px;
+    margin-top: 230px;
+}
+
+.social-icons a span {
+    width: 42px;
+    height: 48px;
+    background: url('../images/splits.png') no-repeat 0px 0px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons a span.fb {
+    background-position:-150px -116px;
+}
+.social-icons a span.fb:hover {
+    background-position:-150px -165px;
+}
+.social-icons a span.twt {
+    background-position: -217px -116px;
+}
+.social-icons a span.twt:hover {
+    background-position: -217px -165px;
+}
+.social-icons a span.wifi {
+    background-position: -282px -116px;
+}
+.social-icons a span.wifi:hover {
+    background-position: -282px -165px;
+}
+.social-icons a span.in {
+    background-position: -349px -116px;
+}
+.social-icons a span.in:hover{
+    background-position: -349px -165px;
+}
+
